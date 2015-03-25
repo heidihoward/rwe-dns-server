@@ -1,0 +1,9 @@
+$ORIGIN readwriteexecute.info.
+$TTL 3600
+readwriteexecute.info.  IN  SOA   ns.readwriteexecute.info. username.readwriteexecute.info. ( 2007120710 1d 2h 4w 1h )
+readwriteexecute.info.  IN  NS    ns1
+readwriteexecute.info.  IN  NS    ns2
+ns1            IN  A     151.225.206.28
+ns2            IN  A     151.225.206.28
+www           IN  CNAME readwriteexecute.info.
+readwriteexecute.info.  IN  CNAME hh360.user.srcf.net
