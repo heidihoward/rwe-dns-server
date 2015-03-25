@@ -1,9 +1,10 @@
 $ORIGIN readwriteexecute.info.
 $TTL 3600
-readwriteexecute.info.  IN  SOA   ns.readwriteexecute.info. username.readwriteexecute.info. ( 2007120710 1d 2h 4w 1h )
-readwriteexecute.info.  IN  NS    ns1
-readwriteexecute.info.  IN  NS    ns2
-ns1            IN  A     151.225.206.28
-ns2            IN  A     151.225.206.28
-www           IN  CNAME readwriteexecute.info.
-readwriteexecute.info.  IN  CNAME hh360.user.srcf.net
+readwriteexecute.info.  3600	IN  SOA   (
+	ns.readwriteexecute.info. username.readwriteexecute.info. 1136975101
+	3600 1800 3024000 1800 )
+readwriteexecute.info.  3600	IN  NS    ns1
+readwriteexecute.info.  3600	IN  NS    ns2
+readwriteexecute.info.  3600	IN  CNAME hh360.user.srcf.net
+ns1  3600	IN  A    151.225.206.28
+ns2  3600	IN  A    151.225.206.28
