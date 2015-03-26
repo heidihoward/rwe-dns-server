@@ -11,6 +11,9 @@ module Main (C:CONSOLE) (K:KV_RO) (S:STACKV4) = struct
   module U = S.UDPV4
   module DNS = Dns_server_mirage.Make(K)(S)
 
+  let ip_endpoint_to_string (ip,pt) =
+  (Ipaddr.to_string ip)^":"^(string_of_int pt)
+
   let print_query c query = 
     let open Packet in
   	match query.questions with
@@ -26,6 +29,10 @@ module Main (C:CONSOLE) (K:KV_RO) (S:STACKV4) = struct
 
 
   let debug c process ~src ~dst packet =
+  	C.log_s c ("src: "^ip_endpoint_to_string src)
+  	>>= fun () -> 
+  	C.log_s c ("dst: "^ip_endpoint_to_string dst)
+  	>>= fun () ->
   	print_query c packet
     >>= fun () -> process ~src ~dst packet
     >>= (fun ans -> print_answer c packet ans
