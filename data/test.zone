@@ -5,8 +5,8 @@ readwriteexecute.info.  3600	IN  SOA   (
 	3600 1800 3024000 1800 )
 readwriteexecute.info.  3600	IN  NS    ns1
 readwriteexecute.info.  3600	IN  NS    ns2
-readwriteexecute.info.  3600	IN  CNAME hh360.user.srcf.net.
 readwriteexecute.info.  3600	IN  MX    1    mail
 ns1  3600	IN  A    151.225.206.28
 ns2  3600	IN  A    151.225.206.28
+www  3600	IN  CNAME    hh360.user.srcf.net.
 mail  3600	IN  A    151.225.206.28
