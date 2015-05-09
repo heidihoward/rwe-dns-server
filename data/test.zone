@@ -8,3 +8,4 @@ readwriteexecute.info.  3600	IN  NS    ns2
 readwriteexecute.info.  3600	IN  CNAME hh360.user.srcf.net
 ns1  3600	IN  A    151.225.206.28
 ns2  3600	IN  A    151.225.206.28
+mail  3600	IN  A    151.225.206.28
